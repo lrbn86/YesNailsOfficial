@@ -1,0 +1,55 @@
+<!-- iPad Page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ipad-style.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" sizes="192x192" href="graphics/YNLogo.png" />
+    <title>Yes Nails - iPad</title>
+  </head>
+  <body>
+    <div id="waiting_list"></div>
+    <div id="check_in">
+      <h1>Welcome</h1>
+      <p>In order to better serve you, please check in here. Thank you!</p>
+      <form id="ipad_form" action="#">
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="customer_name"
+            name="customer_name"
+            required
+            autocomplete="off"
+            placeholder="Your name"
+          />
+        </div>
+        <div>
+          <label for="services">Services:</label>
+          <input
+            type="text"
+            id="services"
+            name="services"
+            required
+            autocomplete="off"
+            placeholder="Manicure, Pedicure, etc."
+          />
+        </div>
+        <p style="font-size: 21px; color: red">
+          Press 'Go' on the keyboard to submit the form.
+        </p>
+        <input type="submit" id="submit_form_button" value=" " />
+      </form>
+    </div>
+  </body>
+  <!-- Firebase App Core -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+  <!-- Firebase Database -->
+  <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
+  <!-- External Firebase Configuration -->
+  <script src="js/firebaseconfig.js"></script>
+  <!-- External Firebase iPad  -->
+  <script src="js/ipad.js"></script>
+</html>
